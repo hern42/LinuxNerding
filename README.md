@@ -106,6 +106,9 @@ The weather forecast is coming via `curl` from http://wttr.in/YourTown which is 
 
 The last thing to do is to have conky start on login, which I did with no magic but the Settings->Session&Startup menu in XFCE... 
 
+Screenshot...
+![Screenshot](/img/Screenshot_2020-04-25_11-02-01.png)
+
 ## OK, Vim it is now.
 So vim is pretty much mandatory around here. I cannot even begin to understand how to live without vim. I won't get into the vim vs. emacs war as I never used emacs in my entire life, not once. So I cannot say anything about that. I installed vim with `apt install vim-gtk3` NOT because I wanted gvim which is an aberation but because I wanted vim to be installed with python3 support and that's the only way I found to do it.
 
