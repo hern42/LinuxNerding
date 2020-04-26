@@ -102,6 +102,8 @@ The config file is in ~/.config/conky/conky.conf there are a lot of places on th
 
 As I am now using `cmus` to listen to music on espresso I wanted to add that on conky as well but there is no straight out of the box way to make them interact (as opposed to mpd which is very well supported) so I used a bash script using `cmus-remote` which is a commandline thing that lets you interact with cmus (weird as `cmus` is already in a terminal somewhere but whatever...) with the *-Q* option one can get a bunch of information and then it's a matter of parsing it to create a nice string to ship to conky via *$execi*. It's all in the script file in the config folder (together with the credit where I got the script before adapting it).
 
+Edit: Well, I just did this one with a python3 program, just because I wanted to see if I could do it. The program is in the config files and the actual conky.conf reflects the change.
+
 The weather forecast is coming via `curl` from http://wttr.in/YourTown which is just amazing.
 
 The last thing to do is to have conky start on login, which I did with no magic but the Settings->Session&Startup menu in XFCE... 
