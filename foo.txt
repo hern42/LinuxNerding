@@ -1,4 +1,0 @@
-foo...
-bar!
-
-some addition here
