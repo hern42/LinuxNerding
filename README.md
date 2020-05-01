@@ -150,6 +150,11 @@ Then I wanted to try my new pip3 and install Tkinter to get back to what I was d
 
 And lastly, `apt install python3-venv` to use virtual environments because it seems that it is the proper way to do things. I'm into proper ways to do things at the moment.
 
+Update: `kivy` was one of the reason I started this whole reinstall thing so I got into installing that properly, ie via venv and guess what? I ended up installing it via apt because I ran into no end of issues with pip. So that is that. As a side note I had to install `xclip` and `xsel` to make it happy...
+
+## Diverse (yeah, that's it, here we are...)
+In order to connect my android phone to *espresso* I installed `Android-File-Transfer` via apt which is nice and doesn't install a single new dependency...
+
 ## What next?
 Well, that's it for now... 
 In the can:
