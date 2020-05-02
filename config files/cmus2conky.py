@@ -29,7 +29,7 @@ if 'playing' in message[0]:
             var = line.split(' title ')
             title =  'title: ' + var[1]
 
-    string = artist + album + title + ' (' + position_string + \
+    string = artist + album + title + '\n ${template3}(' + position_string + \
     '/' + duration_string + ')'
 
 else:
