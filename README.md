@@ -40,6 +40,7 @@ Here is a list of software I'll have on the machine, organised roughly as they w
   - unrar (and additionally unrar-free, not entirely sure of the difference but whatever...)
   - grsync (note: eventually I'll need to learn how to use rsync period, to be able to synch via ssh...)
   - kitty (some weird terminal with funky capabilities such as tabbing and splitting, not entirely sure how to use it but it looks cool)
+  - tmux (in the same vein as kitty)
   - MidnightCommander (aka mc, because Thunar, XFCE's file manager, is nice but lacks a double panel option...)
 
 - Graphics
@@ -55,7 +56,7 @@ Here is a list of software I'll have on the machine, organised roughly as they w
   - mpd + ncmpcpp (There'll be a full section on mpd, for obvious reasons...)
   - VLC
   - Picard (an app to automatically tag audio files, with a GUI)
-  - beets (http://beets.io/ which is pretty much the same as Picard but in the command line and with tons of plugins and shit, so there'll be a section later for that, it is fun!)
+  - beets (http://beets.io/ which is pretty much the same as Picard but in the command line and with tons of plugins and shit, so there'll be a section later for that, it is fun!) my config file for beets is in the config folder (there is not much magic in there but at least I'll remember which plugins I use (to be installed with `pip` by the way))
   - XFCA (to convert stuff from pretty much anything to anything, in my case mostly to put .flac into .mp3)
   - youtube-dl (from apt, very nice and efficient)
 
@@ -120,6 +121,9 @@ Here is the list of plugins I added (undoubtedly it will grow):
 - NERDTree (to have a file tree on the side of vim)
 - SimpylFold (to fold code functions, classes, loops, etc.)
 - indentpython (for proper PEP8 indentation, not a vundle thingy though, it comes from https://github.com/vim-scripts/indentpython.vim)
+- vim-fugitive (for git integration, mainly to allow the git branch to be displayed in the status bar)
+
+The status bar configuration is a total attention sink and can become like a church war. I tried to keep mine simple and without too much attention to colors because I noticed that when I use `tmux` to multiplex my terminal they tend to change... I haven't tamed `kitty` yet as a multiplexer.
 
 The .vimrc is in the config folder here.
 
@@ -155,11 +159,16 @@ Update: `kivy` was one of the reason I started this whole reinstall thing so I g
 ## Diverse (yeah, that's it, here we are...)
 In order to connect my android phone to *espresso* I installed `Android-File-Transfer` via apt which is nice and doesn't install a single new dependency...
 
+
+## Latex
+So I got (almost) bullied back into using LateX and it is still totally fantastic. I discovered that the addons packages are also managed from inside it if one uses the `TexLive` distribution. The magic command is `tlmgr` (obviously for texlivemanager) and there is a bunch of stuff that can be done such as `tlmgr update --list` that gives you the list of upgradable packages installed. Nifty. It pretty much acts as a dedicated `apt`.
+
+
 ## What next?
 Well, that's it for now... 
 In the can:
-- maybe some log about git and how to have it running properly.
 - keep that thing updated when there are changes in some config or other, list of plugins and shit.
+- actually I may change that to a wiki, the README stats to get very long...
 
 See ya around,
 yrs trly,
