@@ -1,0 +1,21 @@
+#config beets 2019-10
+#
+
+directory: /media/hern42/moccha/Music/001 - Permanent Collection
+#directory: /media/hern42/moccha/Music/003 - Archive Collection
+library: /home/hern42/.config/beets/library.db
+
+import:
+   write: yes
+   move: yes
+   resume: ask
+
+color: yes
+pluginpath: /home/hern42/.config/beets/myplugins
+plugins: fetchart embedart discogs
+
+paths:
+   default: $albumartist/$albumartist ($year) $album/$track $title
+   singleton: Non-Album/$artist/$title
+   comp: Compilations/$album%aunique{}/$track $title
+

@@ -19,7 +19,7 @@ Plugin 'gmarik/Vundle.vim'
 " used Bundle instead of Plugin)
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'scrooloose/nerdtree'
-
+Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/indentpython.vim'
 
 " All of your Plugins must be added before the following line
@@ -51,11 +51,27 @@ au BufNewFile,BufRead *.py
     \ 	autoindent
     \ 	fileformat=unix
 
+" highlight and incremental search
+set hlsearch
+set incsearch
+
 " auto indent
 set autoindent
 
 " when using the >> or << commands, shift lines by 4 spaces
 set shiftwidth=4
 
+" status line hacks...
+set laststatus=2
+hi User1 ctermfg=Blue ctermbg=White
+hi User2 ctermfg=Black ctermbg=Yellow cterm=bold
+hi User3 ctermfg=White ctermbg=Black
 
+set statusline=
+set statusline+=%2*\>>\%*
+set statusline+=%1*\ %f\
+set statusline+=%{&modified?'[+]':''}
+set statusline+=%=
+set statusline+=Line\ %3l/%-3L\ %*
+set statusline+=%3*\ %{FugitiveStatusline()}\ %*
 
