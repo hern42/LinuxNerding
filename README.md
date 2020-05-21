@@ -161,7 +161,11 @@ In order to connect my android phone to *espresso* I installed `Android-File-Tra
 
 
 ## Latex
-So I got (almost) bullied back into using LateX and it is still totally fantastic. I discovered that the addons packages are also managed from inside it if one uses the `TexLive` distribution. The magic command is `tlmgr` (obviously for texlivemanager) and there is a bunch of stuff that can be done such as `tlmgr update --list` that gives you the list of upgradable packages installed. Nifty. It pretty much acts as a dedicated `apt`.
+So I got (almost) bullied back into using LateX and it is still totally fantastic. It needs to be installed via `apt install texlive` and having a look at which one (there are different metapackages depending on the needs, mine are fairly simple so I installed the basic one and will manage packages individually if needed be).
+
+As a small reminder `pdflatex xx.tex` is how to make the pdf, basic.
+
+I discovered that the addons packages are also managed from inside it if one uses the `TexLive` distribution. The magic command is `tlmgr` (obviously for texlivemanager) and there is a bunch of stuff that can be done such as `tlmgr update --list` that gives you the list of upgradable packages installed. Nifty. It pretty much acts as a dedicated `apt`. There is a `tlmgr init-usertree` to run the firs time...
 
 
 ## What next?
