@@ -149,7 +149,7 @@ Next thing is to install `pip` as it is said to be the good way to install packa
 
 I tried to create a .bash_profile file with `export PATH="$PATH:~/.local/bin"` in but without sourcing it it wouldn't load it at start-up. This became really annoying after a good bunch of reading things here and there about the proper way to things. Well, the proper way to do it was this way but it still doesn't work so I resorted to add said-line at the end of .bashrc instead which solved it but it is NOT satisfactory let me tell you that!
 
-To be noted that the correct way to install packages via pip is `python3 -m pip install --user <name_of_package>`.
+To be noted that the correct way to install packages via pip is `python3 -m pip install --user <name_of_package>`. And that that proper way to keep pip happily updated is to use `python3 -m pip install --user --upgrade pip`, that's good to do before installing anything new (and is used to upgrade whatever has been installed via pip, obviously).
 
 Then I wanted to try my new pip3 and install Tkinter to get back to what I was doing before this sudden urge to reinstall *espresso* and, well, I had to install it with a good old `apt install python3-tk` because Tkinter is not in pip. Go figure.
 
@@ -158,7 +158,7 @@ And lastly, `apt install python3-venv` to use virtual environments because it se
 `kivy` was one of the reason I started this whole reinstall thing so I got into installing that properly, ie via venv and guess what? I ended up installing it via apt because I ran into no end of issues with pip. So that is that. As a side note I had to install `xclip` and `xsel` to make it happy...
 
 Here is a list of stuff installed with `pip` in order to keep track of things (for upgrading and stuff, as trying to upgrade via pip something installed via apt is **not good**.
-- panda
+- pandas
 - jupyterlab (more on that further down...)
 - beet
 
