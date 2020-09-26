@@ -161,7 +161,7 @@ Here is a list of stuff installed with `pip` in order to keep track of things (f
 - pandas
 - jupyterlab (more on that further down...)
 - beet
-- plotnine (sort of R type stuff to do similar graphs), to be installed using `python3 -m pip install --user 'plotnine[all]'
+- plotnine (sort of R type stuff to do similar graphs), to be installed using `python3 -m pip install --user 'plotnine[all]'`
 
 
 ### Jupyter notebooks
