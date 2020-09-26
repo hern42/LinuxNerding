@@ -161,6 +161,8 @@ Here is a list of stuff installed with `pip` in order to keep track of things (f
 - pandas
 - jupyterlab (more on that further down...)
 - beet
+- plotnine (sort of R type stuff to do similar graphs), to be installed using `python3 -m pip install --user 'plotnine[all]'
+
 
 ### Jupyter notebooks
 So that's pretty cool... It's installed via pip and run by the `jupyter lab`command in the terminal which spawns another terminal with vim opening an html file with a link to copy and open in Firefox (convoluted, there is obviously another way to do that but I like it that way...).
